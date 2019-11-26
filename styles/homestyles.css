@@ -1,0 +1,648 @@
+	/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+@font-face {
+font-family: "josefin";
+src: url("../fonts/JosefinSans-SemiBold.woff.ttf");
+src: url("../fonts/JosefinSans-SemiBold.woff")format("woff");
+}
+
+@font-face {
+font-family: "kaushan";
+src: url("../fonts/kaushan.ttf");
+src: url("../fonts/kaushan.woff")format("woff");
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.burgerbutton:hover{
+	cursor: pointer;
+}
+
+.navpointslist{
+	width: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+	background: white;
+}
+
+.logo {
+	width: 33%;
+	height: 100px;
+	float: left;
+	background-image: url("../images/logo.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+}
+
+
+
+li {
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.pageslogo{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+svg{
+	fill: black;
+	transition: fill 0.3s;
+}
+
+svg:hover{
+	fill: rgb(210, 170, 92);
+	transition: fill 0.3s;
+}
+
+.point::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #D2AA5C;
+	transition: width 0.3s;
+}
+
+.point:hover::after{
+	cursor: pointer;
+	width: 100%;
+	transition: width 0.3s;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+.backroundheader{
+	height: 610px;
+	width: 100%;
+	display: inline-block;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("../images/backgroundheader.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.intro{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.introhello{
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+    top: 50%;
+	margin: auto;
+    transform: perspective(1px) translateY(-50%);
+	
+}
+
+
+
+
+
+.menubutton{
+	text-align: center;
+	display: block;
+	position: relative;
+    top: 50%;
+	margin: auto;
+	border: 3px solid white;
+	font-family: Arial;
+	width: 150px;
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	transform: perspective(1px) translateY(-50%);
+	padding: 4.8px;
+	margin-top: 24px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	letter-spacing: 4.8px;
+	transition: color 0.3s;
+	transition: background 0.3s;
+}
+
+.menubutton:hover{
+	border: 3px solid white;
+	font-family: Arial;
+	background: white;
+	color: black;
+	cursor: pointer;
+	width: 150px;
+	padding: 4.8px;
+	margin-top: 24px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	letter-spacing: 4.8px;
+	transition: color 0.3s;
+	transition: background 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.introoffer{
+	color: rgb(210, 170, 92);
+	text-align: center;
+	margin-top: 50px;
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 36px;
+	font-family: kaushan;
+}
+
+.foodssummary{
+	text-align: center;
+	font-family: josefin;
+	border-bottom: 3px solid rgb(210, 170, 92);
+	width: 66%;
+	padding: 8px;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.moreintro{
+	text-align: center;
+	width: 90%;
+	font-family: josefin;
+	line-height: 24px;
+	color: grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.morebutton{
+	text-align: center;
+	display: block;
+	position: relative;
+    top: 50%;
+	margin: auto;
+	border: 3px solid black;
+	font-family: Arial;
+	width: 150px;
+	color: rgb(210, 170, 92);
+	font-size: 24px;
+	font-weight: 600;
+	transform: perspective(1px) translateY(-50%);
+	padding: 4.8px;
+	margin-top: 36px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	letter-spacing: 4.8px;
+	transition: color 0.3s;
+	transition: background 0.3s;
+}
+
+.morebutton:hover{
+	border: 3px solid black;
+	font-family: Arial;
+	background: black;
+	color: rgb(210, 170, 92);
+	cursor: pointer;
+	width: 150px;
+	padding: 4.8px;
+	margin-top: 36px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	letter-spacing: 4.8px;
+	transition: color 0.3s;
+	transition: background 0.3s;
+}
+
+.taster{
+	width: 100%;
+	height: auto;
+}
+
+.container{
+	text-align: center;
+}
+ 
+.firstwrapper{
+	display: inline-block;
+	background: black;
+	width: 40vw;
+	height: 26vw;
+	padding: 0;
+	margin: 0;
+}
+
+.secondwrapper{
+	display: inline-block;
+	background: red;
+	width: 20vw;
+	height: 13vw;
+}
+
+.burgerpic{
+	width: 20vw;
+	height: 13vw;
+}
+
+.cocktailpic{
+	width: 20vw;
+	height: 13vw;
+}
+
+.pizzapic{
+	width: 40vw;
+	height: 26vw;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.columndivider{
+	width: 100%;
+	text-align: center;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+@media (min-width: 1200px){
+	
+	.navpointsdropcollapsed{
+		visibility: hidden;
+	}
+	
+	.pages {
+	margin-top: 40px;
+	width: 33%;
+	float: left;
+	
+}
+	
+	.burgerbutton{
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
+
+.navpoints{
+	margin-top: 40px;
+	width: 33%;
+	float: left;
+	font-size: 20px;
+	font-family: josefin;
+	text-align: center;
+}
+	
+	.col1{
+	display: inline-block;
+	width: 45%;
+	height: auto;
+	margin-right: 12px;
+}
+
+.col2{
+	display: inline-block;
+	width: 45%;
+	height: auto;
+	margin-left: 12px;
+}
+	
+	
+	
+}
+
+@media (min-width: 550px){
+	.samplepic{
+	height: 150px;
+	width: 200px;
+	float: left;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+	
+	.moreintro{
+	text-align: center;
+	width: 60%;
+	font-family: josefin;
+	line-height: 24px;
+	color: grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	
+	
+	
+}
+
+@media (max-width: 1200px){
+	
+	li{
+		weight: 0px;
+		height: 0px;
+	}
+	
+	.navpointslistdrop{
+	width: auto;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navpointsdrop{
+	margin-top: 0px;
+	width: 100%;
+	height: auto;
+	float: left;
+	font-size: 20px;
+	font-family: josefin;
+	max-height: 1000px;
+	transition: max-height 2.1s ease-out;
+}
+
+.navpointsdropcollapsed{
+	float: left;
+	margin-top: 0px;
+	width: 100%;
+	font-size: 20px;
+	font-family: josefin;
+	max-height: 0px;
+	transition: max-height 1.0s ease-out;
+}
+
+.pointdrop{
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 48px;
+}
+	
+	.burgerbutton{
+		margin: 0px;
+		width: 36px;
+		padding: 0;
+		margin-top: 30px;
+		margin-right: 24px;
+		float: right;
+	}
+	
+	.burgerbuttondiv{
+		margin-top: 0px;
+	    float: right;
+	}
+	
+	.pages {
+		height: 0px;
+		width: 0px;
+	visibility:hidden
+	
+}
+
+.navpoints{
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+	
+	.col1{
+	margin-right: 12px;
+	margin-left: 12px;
+}
+.col2{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+	
+}
+
+@media(min-width: 500px){
+	
+	.address{
+	text-align: center;
+	display: inline-block;
+	display: block;
+	position: relative;
+    top: 50%;
+	margin: auto;
+	font-family: kaushan;
+    transform: perspective(1px) translateY(-50%);
+	color: white;
+}
+	
+	h1{
+	text-align: center;
+	display: block;
+	position: relative;
+    top: 50%;
+	font-family: josefin;
+	color: white;
+	margin: auto;
+	font-size: 40px;
+    transform: perspective(1px) translateY(-50%);
+}
+	
+	.sampleprice{
+	float: right;
+	font-family: josefin;
+	color: black;
+	font-size: 24px;
+}
+	
+		.sample{
+	margin-top: 24px;
+	height: auto;
+	width: 100%;
+	display:inline-table;
+}
+	
+	.sampletitle{
+	float: left;
+	font-family: josefin;
+	color: rgb(210, 170, 92);
+	font-size: 24px;
+	margin-left: 12px;
+	
+}
+	
+	}
+
+@media(max-width: 500px){
+	
+	.address{
+	text-align: center;
+    top: 50%;
+	margin: auto;
+	font-family: kaushan;
+    transform: perspective(1px) translateY(-50%);
+	font-size: 20px;
+	color: white;
+}
+	
+	h1{
+	text-align: center;
+	display: block;
+	position: relative;
+    top: 50%;
+	font-family: josefin;
+	color: white;
+	margin: auto;
+    transform: perspective(1px) translateY(-50%);
+}
+	
+	.sampleprice{
+	float: right;
+	font-family: josefin;
+	color: black;
+	font-size: 20px;
+}
+	
+	.samplepicwrapper{
+		width: 100%;
+		display: block;
+		text-align: center;
+    }
+	
+	.samplepic{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	
+	.sampletitle{
+	float: left;
+	font-family: josefin;
+	color: rgb(210, 170, 92);
+	font-size: 24px;
+}
+	
+	
+	.sampledetails{
+		margin: 0;
+		margin-top: 12px;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.sampletitle{
+		margin: 0;
+		font-size: 20px;
+	}
+	
+	.sample{
+	margin-top: 24px;
+	height: auto;
+	width: 100%;
+		
+}
+	
+	}
+
+@media (max-width: 550px){
+	.samplepic{
+	height: 100px;
+	width: 150px;
+	float: left;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+	
+	.secondwrapper{
+	display: inline-block;
+	background: red;
+	width: 0vw;
+	height: 0vw;
+}
+
+.burgerpic{
+	width: 0vw;
+	height: 0vw;
+}
+	
+	.firstwrapper{
+		height: 39vw;
+		width: 60vw;
+	}
+	
+	.pizzapic{
+		height: 39vw;
+		width: 60vw;
+	}
+
+.cocktailpic{
+	width: 0vw;
+	height: 0vw;
+}
+	
+}
+
+
+
+.copyright{
+	font-family: josefin;
+	text-align: center;
+	color: white;
+	background: grey;
+	height: auto;
+	margin: 0;
+	padding: 40px;
+}
+
+.sample{
+	opacity: 0;
+	transition: opacity 0.5s;
+}
